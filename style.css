@@ -1,13 +1,14 @@
 
 body {
   font-family: Arial, sans-serif;
+  background: #1b1b1b; /* Contoh: warna abu-abu terang */
   line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #333;
+  background: #101010;
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -16,12 +17,12 @@ header {
 section {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   border-radius: 8px;
 }
 
 h1, h2 {
-  color: #333;
+  color: #ffffff;
 }
 
 footer {
@@ -30,4 +31,39 @@ footer {
   color: #fff;
   padding: 10px;
   margin-top: 20px;
+}
+
+/* Style for project boxes */
+#projects ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+#projects ul li {
+  background: #7e7e7e;
+  border: 1px solid #575757;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects ul li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sketchfab-container {
+  display: flex; /* Mengatur elemen anak berdampingan */
+  gap: 20px; /* Memberi jarak antar elemen */
+}
+
+.sketchfab-embed-wrapper {
+  flex: 1; /* Membagi ruang secara proporsional */
+  max-width: 50%; /* Membatasi lebar maksimum tiap iframe */
+  height: 480px; /* Tinggi tetap */
+  border-radius: 8px;
 }
